@@ -2,6 +2,9 @@
 -create project using Vite Bundler (Create REact app is Deprecated)
 -install vite 
 -Configuration TailwaindCSS using vite Framework
+-Header
+-Login Form
+-Sign Up form 
 
 
 # Features
