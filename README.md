@@ -3,9 +3,18 @@
 -install vite 
 -Configuration TailwaindCSS using vite Framework
 -Header
+-Router of App
 -Login Form
 -Sign Up form 
-
+-Form Validation
+-useREf Hooks
+-Firebase Setup
+-Deploying our app to Production
+-Create Sign up user Account
+-implement sign in user API
+-Created Redux Store with userSlice
+-Implemented Sign Out
+-Update Profile Call also
 
 # Features
 -Login/SignUp page
