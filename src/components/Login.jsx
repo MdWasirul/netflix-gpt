@@ -7,12 +7,11 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { LOGIN_PAGE, USER_AVATAR } from "../utils/constant";
 
 const Login = () => {
-  const navigate = useNavigate();
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
   const password = useRef(null);
@@ -39,7 +38,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: "https://avatars.githubusercontent.com/u/179301374?v=4",
+            photoURL: USER_AVATAR,
           })
             .then(() => {
               // Profile updated
@@ -52,7 +51,6 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              navigate("/browse");
             })
             .catch((error) => {
               // An error occurred
@@ -76,7 +74,6 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           console.log(user);
-          navigate("/browse");
 
           // ...
         })
@@ -95,11 +92,7 @@ const Login = () => {
     <div className="">
       <Header />
       <div>
-        <img
-          className="absolute "
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/af2fac72-d956-4952-8686-4d45d359d78c/web/IN-en-20250526-TRIFECTA-perspective_5db3e163-56f7-47c7-9a65-b79b9d76bf24_small.jpg"
-          alt="Background image"
-        />
+        <img className="absolute " src={LOGIN_PAGE} alt="Background image" />
       </div>
       <form
         className="w-4/12 absolute p-12 bg-black text-white mt-30 mx-auto right-0 left-0 opacity-90"
