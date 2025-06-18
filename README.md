@@ -18,8 +18,20 @@
 -Update Profile Call also
 -BugFix:Sign Up user displayName and profile picture
 -BugFix:If the user is not logged in Redirect /browse to Login page and Vice-a-Versa.
--Unsubscribe to  the OnAuthStateChanged callback
--Use Constant files for links or URL
+-Unsubscribe to the OnAuthStateChanged callback
+-Add Hardcoded values to the Constant.js files
+-Register to TMDB app and Create a app && get access token
+-Get data from TMDB now playing movies list API
+-Create a MovieSlice and provide slice to store
+-Custom Hook for Now Playing Movies
+-Create movieSlice
+-Update Store with movies Data
+-Planning for MainContauiner & secondary container
+-Fetch Data for Trailer Video
+-Update Store with Trailer Video Data
+-Embedded the Yotube video and make it autoplay and mute
+-Tailwind Classes to make Main Container look awesome
+
 -Fetch from TMDB Movies
 
 # Features
