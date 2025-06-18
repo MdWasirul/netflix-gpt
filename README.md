@@ -21,6 +21,7 @@
 -Unsubscribe to the OnAuthStateChanged callback
 -Add Hardcoded values to the Constant.js files
 -Register to TMDB app and Create a app && get access token
+-Fetch from TMDB Movies
 -Get data from TMDB now playing movies list API
 -Create a MovieSlice and provide slice to store
 -Custom Hook for Now Playing Movies
@@ -31,8 +32,12 @@
 -Update Store with Trailer Video Data
 -Embedded the Yotube video and make it autoplay and mute
 -Tailwind Classes to make Main Container look awesome
-
--Fetch from TMDB Movies
+-Build the Secondary Contianer
+-Build Secondary Component
+-Build Movie List
+-build Movie Card
+-TMDB Image CDN URL
+-Made the Browsre page amazing with Tailwind CSS
 
 # Features
 
