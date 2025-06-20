@@ -38,6 +38,7 @@
 -build Movie Card
 -TMDB Image CDN URL
 -Made the Browsre page amazing with Tailwind CSS
+-usePopularMovies custom hooks
 
 # Features
 
@@ -57,4 +58,19 @@
 -SaarchBar
 -Movie Suggestion
 
--
+# usePopularMovie.js – Custom Hook
+
+-What Happens When You Use It in Browse component
+
+-usePopularMovie();
+
+-As soon as Browse component renders:
+-usePopularMovie() is called
+
+-Inside it, getPopularMovies() is defined and executed inside useEffect
+
+-It makes an API call to TMDB
+
+-Result is dispatched via addPopularMovies to your Redux store
+
+-Any component subscribed to popularMovies state will re-render with new data
