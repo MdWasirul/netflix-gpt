@@ -9,7 +9,7 @@ import {
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
-import { LOGIN_PAGE, USER_AVATAR } from "../utils/constant";
+import { BG_URL, USER_AVATAR } from "../utils/constant";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -92,7 +92,7 @@ const Login = () => {
     <div className="">
       <Header />
       <div>
-        <img className="absolute " src={LOGIN_PAGE} alt="Background image" />
+        <img className="absolute " src={BG_URL} alt="Background image" />
       </div>
       <form
         className="w-4/12 absolute p-12 bg-black text-white mt-30 mx-auto right-0 left-0 opacity-90"
