@@ -11,5 +11,9 @@ const lang = {
     Search: "Buscar",
     gptPlaceHolder: "¿Qué te gustaría ver hoy?",
   },
+   telugu: {
+    Search: "శోధన",
+    gptPlaceHolder: "ఈరోజు మీరు ఏమి చూడాలనుకుంటున్నారు?",
+  },
 };
 export default lang;
