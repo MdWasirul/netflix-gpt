@@ -7,7 +7,10 @@ const GptSearchBar = () => {
   // console.log("langkey=", langKey);
   return (
     <div className="pt-[10%] flex justify-center">
-      <form className="w-1/2 bg-black grid grid-cols-12 ">
+      <form
+        className="w-1/2 bg-black grid grid-cols-12 "
+        onSubmit={(e) => e.preventDefault()}
+      >
         <input
           type="text"
           placeholder={lang[langKey].gptPlaceHolder}
